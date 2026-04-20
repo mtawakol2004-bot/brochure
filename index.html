@@ -36,7 +36,6 @@
     position: relative;
     background: #fff;
     box-shadow: 0 8px 40px rgba(0,0,0,0.22);
-    border: 1px solid #b0b8c8;
     overflow: hidden;
   }
 
@@ -54,26 +53,10 @@
   .fold-line {
     width: 1px;
     height: 210mm;
-    border-left: 2px dashed #87CEEB;
-    position: relative;
+    background: rgba(135,206,235,0.25);
     flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  .fold-line::after {
-    content: 'FOLD HERE';
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 7px;
-    font-weight: 600;
-    color: #87CEEB;
-    letter-spacing: 0.15em;
-    background: #e8eaf0;
-    padding: 4px 2px;
-    border-radius: 2px;
-  }
+  .fold-line::after { display: none; }
 
   /* ===== CUT BORDER (screen only) ===== */
   .cut-label {
@@ -912,9 +895,9 @@
             <line x1="6" y1="13" x2="10" y2="13" stroke="#87CEEB" stroke-width="1.2"/>
           </svg>
         </div>
-        <div class="p3-step-title">Order & Load</div>
+        <div class="p3-step-title">Choose Your Slot</div>
       </div>
-      <div class="p3-step-body">Your package is placed in the drone cargo hold at the fulfilment centre — ready for dispatch.</div>
+      <div class="p3-step-body">Pick the exact time you want your package delivered. No more waiting at home all day — you decide when the drone arrives.</div>
     </div>
 
     <div class="p3-connector"></div>
@@ -1046,7 +1029,7 @@
         <div class="sky-rule"></div>
         <div style="display:flex;justify-content:space-between;margin-top:3mm;">
           <div style="text-align:center;">
-            <div style="font-family:'Bebas Neue',sans-serif;font-size:18pt;color:#87CEEB;">5<span style="font-size:9pt;"> kg</span></div>
+            <div style="font-family:'Bebas Neue',sans-serif;font-size:18pt;color:#87CEEB;">20<span style="font-size:9pt;"> kg</span></div>
             <div style="font-family:'DM Sans',sans-serif;font-size:7pt;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.1em;">Max Payload</div>
           </div>
           <div style="text-align:center;">
@@ -1140,7 +1123,7 @@
         </div>
         <div style="width:1px;height:12mm;background:rgba(135,206,235,0.3);"></div>
         <div style="text-align:center;">
-          <div style="font-family:'Bebas Neue',sans-serif;font-size:18pt;color:#FFD700;">5<span style="font-size:10pt;color:#87CEEB;"> kg</span></div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:18pt;color:#FFD700;">20<span style="font-size:10pt;color:#87CEEB;"> kg</span></div>
           <div style="font-family:'DM Sans',sans-serif;font-size:7pt;color:rgba(255,255,255,0.6);text-transform:uppercase;letter-spacing:0.1em;">Payload</div>
         </div>
         <div style="width:1px;height:12mm;background:rgba(135,206,235,0.3);"></div>
@@ -1204,7 +1187,7 @@
             <div style="width:2mm;height:2mm;background:#87CEEB;border-radius:50%;margin-top:2mm;flex-shrink:0;"></div>
             <div>
               <div style="font-family:'DM Sans',sans-serif;font-size:8.5pt;color:#ffffff;font-weight:600;">Weight Limit</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.6);">Current drones carry under ~5 kg only</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:7.5pt;color:rgba(255,255,255,0.6);">Next-gen drones target 10–20 kg loads</div>
             </div>
           </div>
         </div>
